@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Myanmar 2D Live Results Today · 3D & Market Prices</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Header -->
+<header class="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-sm">
+<div class="mx-auto flex max-w-[480px] items-center justify-between px-4 py-3">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white font-bold">⚡</div>
+<span class="text-lg font-bold">Set<span class="text-blue-600">Live</span></span>
+</div>
+<span class="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-600 uppercase">Live Web App</span>
+</div>
+</header>
+
+<!-- Main Content -->
+<main class="mx-auto max-w-[480px] px-4 py-4 w-full flex-1">
+
+<!-- Live 2D Result Card -->
+<div class="rounded-2xl bg-blue-600 p-5 text-white shadow-lg text-center">
+<h1 class="text-sm font-bold flex items-center justify-center gap-1.5 opacity-90">
+<span>⚡</span> Myanmar 2D Live
+</h1>
+<div class="my-3">
+<p id="live-number" class="text-[88px] font-black tracking-wider leading-none">08</p>
+</div>
+<span id="update-status" class="mb-4 block text-xs font-medium text-white/80">Updated --</span>
+
+<!-- Sessions Grid -->
+<div class="grid grid-cols-4 gap-2 text-center mb-2">
+<div class="flex flex-col rounded-lg border border-white/40 py-2 bg-blue-700/30">
+<span class="text-[11px] font-semibold uppercase opacity-85">11:00</span>
+<span class="text-xl font-black">51</span>
+</div>
+<div class="flex flex-col rounded-lg border border-white/40 py-2 bg-blue-700/30">
+<span class="text-[11px] font-semibold uppercase opacity-85">12:01</span>
+<span class="text-xl font-black">97</span>
+</div>
+<div class="flex flex-col rounded-lg border border-white/40 py-2 bg-blue-700/30">
+<span class="text-[11px] font-semibold uppercase opacity-85">03:00</span>
+<span class="text-xl font-black">94</span>
+</div>
+<div class="flex flex-col rounded-lg border border-white/40 py-2 bg-blue-700/30">
+<span class="text-[11px] font-semibold uppercase opacity-85">04:30</span>
+<span class="text-xl font-black">08</span>
+</div>
+</div>
+</div>
+
+<!-- Market Prices Section -->
+<section class="mt-6">
+<h2 class="mb-3 text-sm font-bold text-gray-700">ဈေးကွက်ပေါက်ဈေးများ (Market Prices)</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="rounded-xl border border-gray-200 p-3.5 bg-white shadow-sm">
+<span class="text-xs text-gray-500 block">၁၆ ပဲရည် (အရောင်း)</span>
+<p class="text-sm font-bold text-gray-900 mt-1">10,190,000 ကျပ်</p>
+</div>
+<div class="rounded-xl border border-gray-200 p-3.5 bg-white shadow-sm">
+<span class="text-xs text-gray-500 block">အမေရိကန်ဒေါ်လာ (ဝယ်ဈေး)</span>
+<p class="text-sm font-bold text-gray-900 mt-1">4,710 ကျပ်</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer Navigation Bar -->
+<nav class="sticky bottom-0 z-50 border-t border-gray-200 bg-white py-2 shadow-inner">
+<div class="mx-auto flex max-w-[480px] justify-around text-xs font-medium text-gray-600">
+<a href="#" class="flex flex-col items-center text-blue-600">🏠 <span class="mt-0.5">ပင်မ</span></a>
+<a href="#" class="flex flex-col items-center text-gray-500">📈 <span class="mt-0.5">မှတ်တမ်း</span></a>
+<a href="#" class="flex flex-col items-center text-gray-500">📅 <span class="mt-0.5">ပြက္ခဒိန်</span></a>
+<a href="#" class="flex flex-col items-center text-gray-500">🧮 <span class="mt-0.5">တွက်ချက်ရန်</span></a>
+</div>
+</nav>
+
+<!-- JavaScript Connection -->
+<script src="app.js"></script>
+</body>
+</html>

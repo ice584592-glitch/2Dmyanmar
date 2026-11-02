@@ -1,0 +1,22 @@
+/**
+• app.js - Myanmar 2D Live Logic
+*/
+
+document.addEventListener("DOMContentLoaded", () => {
+console.log("2D Live App Loaded Successfully.");
+
+function updateLiveResults() {
+const now = new Date();
+const timeString = now.toLocaleTimeString();
+
+// Update Status Time
+document.getElementById("update-status").innerText = နောက်ဆုံး အပ်ဒိတ်ချိန်: ${timeString};
+
+// Simulating Live Number Update (တကယ့် API ချိတ်မယ်ဆိုရင် ဒီနေရာမှာ Fetch လုပ်ရပါမယ်)
+document.getElementById("live-number").innerText = "08";
+}
+
+// Run every 10 seconds
+setInterval(updateLiveResults, 10000);
+updateLiveResults();
+});
